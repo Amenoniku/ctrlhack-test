@@ -48,15 +48,7 @@ export default {
   }),
   methods: {
     updateStorage() {
-      let storage = [],
-          keys = Object.keys(localStorage),
-          i = keys.length
-
-      while (i--) {
-        storage.push(localStorage.getItem(keys[i]))
-      }
-
-      this.allStorage = storage
+      this.allStorage = Object.keys(localStorage).map(key => localStorage.getItem(key))
     },
     changeForm: debounce(function (label, value) {
       const sumInput = this.inputs.find(item => item.label === "Сумма"),

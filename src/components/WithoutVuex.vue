@@ -8,6 +8,7 @@
       @input="addEvent"
     />
     <br>
+    <h3>События</h3>
     <Events :events="events" />
   </div>
 </template>

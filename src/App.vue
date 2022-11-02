@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <WithoutVuex />
+    <WithVuex />
   </div>
 </template>
 
 <script>
+import WithVuex from './components/WithVuex.vue'
 import WithoutVuex from './components/WithoutVuex.vue'
 
 export default {
   name: 'App',
   components: {
-    WithoutVuex
+    WithoutVuex,
+    WithVuex
   }
 }
 </script>
