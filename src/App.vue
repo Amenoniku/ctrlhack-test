@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <WithoutVuex />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WithoutVuex from './components/WithoutVuex.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    WithoutVuex
   }
 }
 </script>
