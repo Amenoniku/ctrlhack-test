@@ -67,8 +67,8 @@ export default {
       }
       this.$emit("input", `Изменен инпут: "${label}", со значением: ${value}`)
     }, 300),
-    async send() {
-      await this.$emit('send', this.inputs)
+    send() {
+      +this.inputs[2].value % 2  === 0 ? this.$emit('send', this.inputs) : this.$emit("input", `Сумма не четное число, отправка данных запрещена!`)
       this.updateStorage()
     }
   },
